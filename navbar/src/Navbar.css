@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  background: #111827;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Logo */
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #6366f1;
+}
+
+/* Navigation */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a,
+.dropdown-btn {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.dropdown-btn:hover {
+  color: #818cf8;
+}
+
+/* Dropdown */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  padding: 8px 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 42px;
+  left: 0;
+
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+
+  padding: 10px 0;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 18px;
+  color: #374151;
+}
+
+.dropdown-menu a:hover {
+  background: #f3f4f6;
+  color: #6366f1;
+}
+
+/* Search */
+
+.search-box {
+  display: flex;
+  align-items: center;
+
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+
+  border: 1px solid #374151;
+}
+
+.search-box input {
+  width: 150px;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.search-box button {
+  border: none;
+  background: #6366f1;
+  color: white;
+
+  padding: 10px 14px;
+
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #4f46e5;
+}
+
+/* Mobile button */
+
+.menu-btn {
+  display: none;
+
+  background: none;
+  border: none;
+  color: white;
+
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .navbar-container {
+    position: relative;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+
+    position: absolute;
+    top: 65px;
+    left: 0;
+
+    width: 100%;
+
+    background: #111827;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+
+    border-radius: 0 0 10px 10px;
+
+    z-index: 99;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .search-box {
+    display: none;
+  }
+}
