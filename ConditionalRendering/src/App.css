@@ -4,3 +4,10 @@
   padding: 0;
   border: none;
 }
+
+.visible{
+  display: block;
+}
+.unvisible{
+  display: none;
+}
