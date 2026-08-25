@@ -24,7 +24,8 @@ function Bye() {
       <input type="text" onChange={handleInput} placeholder="Type Something" />
       {/* <h2>Value: {inputValue}</h2> */}
       <br/>
-      <h1>This is good</h1>
+      <h3>This is good</h3>
+      <h4>This is me</h4>
     </>
   );
 }
