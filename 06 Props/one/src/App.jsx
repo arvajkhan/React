@@ -7,6 +7,7 @@ function App() {
         name="Arvaj khan"
         age={24}
         city="Kasganj"
+        course="B.tech"
       />
       <br />
       <Props
@@ -14,6 +15,7 @@ function App() {
         name="Shahil khan"
         age={21}
         city="Mathura"
+        course="BCA"
       />
     </>
   );

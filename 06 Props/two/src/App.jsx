@@ -25,6 +25,13 @@ function App() {
         description="Capture beautiful moments with this camera."
         price="4999"
       />
+       <Card
+        image="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+        title="Camera"
+        description="Capture beautiful moments with this camera."
+        price="4999"
+      />
+
 
     </div>
   );
