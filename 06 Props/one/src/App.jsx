@@ -6,6 +6,9 @@ function App() {
   function Message() {
     alert("Hello From Message Box");
   }
+  function ByeMessage(){
+    alert("Hello From Bye Message Box")
+  }
 
   return (
     <>
@@ -19,6 +22,9 @@ function App() {
         hobbies={hobbies}
         buttonLabel="Click me"
         handleClick={Message}
+
+          secondButtonLabel="Just Click"
+        secondHandleClick={ByeMessage}
       />
 
       <Props
@@ -30,13 +36,17 @@ function App() {
         hobbies={hobbies}
         buttonLabel="Click Me"
         handleClick={Message}
+         secondButtonLabel="Just Click"
+        secondHandleClick={ByeMessage}
       />
 
       <Props
         name="Akshay"
         hobbies={hobbies}
-        buttonLabel="Hello Akshay"
+        buttonLabel="Click Me"
         handleClick={Message}
+        secondButtonLabel="Just Click"
+        secondHandleClick={ByeMessage}
       />
       </div>
     </>
