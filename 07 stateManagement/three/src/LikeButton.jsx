@@ -1,13 +1,12 @@
 import { useState } from "react";
-function ToggleText() {
-  const [isVisible, SetIsVisible] = useState(false);
+function LikedButton() {
+  const [liked, SetLiked] = useState(false);
   return (
     <div>
-      <button onClick={() => SetIsVisible(!isVisible)}>
-        {isVisible ? "Hide" : "Show"} Text
+      <button onClick={() => SetLiked(!liked)}>
+        {liked ? "❤️ Liked" : "🤍 Like "} 
       </button>
-      {isVisible && <p>This is Secret</p>}
     </div>
   );
 }
-export default ToggleText;
+export default LikedButton;
