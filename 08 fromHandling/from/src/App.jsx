@@ -1,8 +1,14 @@
-import SimpleFrom from "./SimpleFrom";
+// import SimpleFrom from "./SimpleFrom";
+// import MultiInputFrom from "./MultipeInputFrom";
+import AdvancedFrom from "./AdvancedFrom";
 function App() {
   return (
     <>
-      <SimpleFrom />
+      {/* <SimpleFrom /> */}
+      <br />
+      <hr />
+      {/* <MultiInputFrom/> */}
+      <AdvancedFrom />
     </>
   );
 }

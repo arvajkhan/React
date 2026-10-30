@@ -6,20 +6,41 @@ function MultiInputFrom() {
     e.preventDefault();
     console.log(formData);
   };
-  const handleChange = (e) =>{
-   setFromData((prev ) => {
-
-   })
-  }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFromData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
   return (
     <form onSubmit={formHandlinng}>
       <h2>Multiple Input Form</h2>
-      <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange}/>
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        value={formData.name}
+        onChange={handleChange}
+      />
       <br />
-      <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange}/>
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        value={formData.email}
+        onChange={handleChange}
+      />
       <br />
-      <input type="number" name="age" placeholder="Age" value={formData.age} onChange={handleChange}/>
+      <input
+        type="number"
+        name="age"
+        placeholder="Age"
+        value={formData.age}
+        onChange={handleChange}
+      />
       <br />
+      <button type="submit">Submit</button>
     </form>
   );
 }
