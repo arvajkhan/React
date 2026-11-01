@@ -1,6 +1,7 @@
 // import SimpleFrom from "./SimpleFrom";
 // import MultiInputFrom from "./MultipeInputFrom";
-import AdvancedFrom from "./AdvancedFrom";
+// import AdvancedFrom from "./AdvancedFrom";
+import UnControlledFrom from "./UncontrolledFrom";
 function App() {
   return (
     <>
@@ -8,7 +9,8 @@ function App() {
       <br />
       <hr />
       {/* <MultiInputFrom/> */}
-      <AdvancedFrom />
+      {/* <AdvancedFrom /> */}
+      <UnControlledFrom/>
     </>
   );
 }
