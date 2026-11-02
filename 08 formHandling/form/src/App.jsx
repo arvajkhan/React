@@ -1,7 +1,8 @@
 // import SimpleFrom from "./SimpleFrom";
 // import MultiInputFrom from "./MultipeInputFrom";
 // import AdvancedFrom from "./AdvancedFrom";
-import UnControlledFrom from "./UncontrolledFrom";
+import BasicValidationform from "./BasicValidationFrom";
+// import UnControlledFrom from "./UncontrolledFrom";
 function App() {
   return (
     <>
@@ -10,7 +11,9 @@ function App() {
       <hr />
       {/* <MultiInputFrom/> */}
       {/* <AdvancedFrom /> */}
-      <UnControlledFrom/>
+      <BasicValidationform/>
+      {/* <UnControlledFrom/> */}
+
     </>
   );
 }
